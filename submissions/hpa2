@@ -1,0 +1,1 @@
+[PASTE REAL OUTPUT HERE — run: kubectl get hpa guestbook --watch  (after running the load generator against the guestbook route/service, in the IBM Cloud IDE terminal — should show REPLICAS > 0 as the HPA scales up). Do not fill this in yourself.]

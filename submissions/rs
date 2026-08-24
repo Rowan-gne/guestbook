@@ -1,0 +1,1 @@
+[PASTE REAL OUTPUT HERE — run: kubectl get rs  (after rolling back to revision 1 with `kubectl rollout undo deployment/guestbook --to-revision=1`, in the IBM Cloud IDE terminal). Do not fill this in yourself.]

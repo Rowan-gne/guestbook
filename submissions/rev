@@ -1,0 +1,7 @@
+[PASTE REAL OUTPUT HERE — run BOTH commands below and label each section, in the IBM Cloud IDE terminal. Do not fill this in yourself.]
+
+=== kubectl rollout history deployment/guestbook ===
+[paste output here]
+
+=== kubectl rollout history deployments guestbook --revision=2 ===
+[paste output here]

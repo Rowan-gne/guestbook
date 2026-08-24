@@ -1,0 +1,1 @@
+[PASTE REAL OUTPUT HERE — run: kubectl apply -f deployment.yml  (after the CPU limits/requests change to 5m/2m in Step 5, in the IBM Cloud IDE terminal). Do not fill this in yourself.]

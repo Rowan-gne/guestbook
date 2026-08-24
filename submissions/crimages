@@ -1,0 +1,1 @@
+[PASTE REAL OUTPUT HERE — run: ibmcloud cr images  (after building and pushing the v1 image with `docker build . -t us.icr.io/<your_namespace>/guestbook:v1` and `docker push us.icr.io/<your_namespace>/guestbook:v1`, in the IBM Cloud IDE terminal). Do not fill this in yourself.]

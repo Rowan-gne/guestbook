@@ -1,0 +1,1 @@
+[PASTE REAL OUTPUT HERE — run: docker build . -t us.icr.io/<your_namespace>/guestbook:v1  followed by  docker push us.icr.io/<your_namespace>/guestbook:v1  (for the v2 index.html image update, in the IBM Cloud IDE terminal — include the full build output and the final push digest line). Do not fill this in yourself.]
