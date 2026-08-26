@@ -1,1 +1,9 @@
-[PASTE REAL OUTPUT HERE — run: kubectl apply -f deployment.yml  (after the CPU limits/requests change to 5m/2m in Step 5, in the IBM Cloud IDE terminal). Do not fill this in yourself.]
+[PASTE REAL OUTPUT HERE — run: kubectl apply -f deployment.yml
+(after substituting REPLACE_NAMESPACE with sn-labs-rowannepulan in the image line, and
+after confirming the v2 image was actually pushed with a NEW digest — see submissions/upguestbook).
+
+GOTCHA: the output line must say "deployment.guestbook configured" — if it says
+"deployment.guestbook unchanged", Kubernetes saw no diff from the currently-applied
+manifest and nothing actually changed. Do not treat "unchanged" as success.
+
+Do not fill this in yourself.]

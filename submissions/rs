@@ -1,1 +1,6 @@
-[PASTE REAL OUTPUT HERE — run: kubectl get rs  (after rolling back to revision 1 with `kubectl rollout undo deployment/guestbook --to-revision=1`, in the IBM Cloud IDE terminal). Do not fill this in yourself.]
+[PASTE REAL OUTPUT HERE — run: kubectl get rs
+(after rolling back with `kubectl rollout undo deployment/guestbook` — NO --to-revision flag,
+and NEVER --to-revision=1, since revision 1 is permanently broken (InvalidImageName).
+A plain `rollout undo` with no revision flag steps back one revision, which is what you want.)
+
+Do not fill this in yourself.]

@@ -1,1 +1,18 @@
-[PASTE REAL OUTPUT HERE — run: docker build . -t us.icr.io/<your_namespace>/guestbook:v1  followed by  docker push us.icr.io/<your_namespace>/guestbook:v1  (for the v2 index.html image update, in the IBM Cloud IDE terminal — include the full build output and the final push digest line). Do not fill this in yourself.]
+[PASTE REAL OUTPUT HERE. Run (after substituting REPLACE_NAMESPACE with sn-labs-rowannepulan):
+  docker build . -t us.icr.io/sn-labs-rowannepulan/guestbook:v1
+  docker push us.icr.io/sn-labs-rowannepulan/guestbook:v1
+
+Include the FULL build output and the final push digest line.
+
+GOTCHA — last attempt every layer was CACHED and the pushed digest came out identical to
+the old v1 digest: sha256:754931baf8f9df7a0e24d5876da8f0e49bb3e33983dc1b88ce49f430598617b1
+That meant the index.html/deployment.yml edits never actually reached the image.
+
+Before running this: confirm the local files on disk actually have the v2 changes
+(`grep -n "<title>\|<h1>" v1/guestbook/public/index.html` should show "Guestbook - v2"
+twice) — the hardened submit.sh does this check automatically and aborts the build
+if it fails, so prefer running the build through submit.sh rather than by hand.
+
+After the push, check the printed digest against the one above (and against
+.last-digest if submit.sh wrote one) — if it matches, STOP, don't trust this build,
+your edits still aren't in the image. Do not fill this in yourself.]

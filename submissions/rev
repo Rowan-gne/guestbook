@@ -1,4 +1,10 @@
-[PASTE REAL OUTPUT HERE — run BOTH commands below and label each section, in the IBM Cloud IDE terminal. Do not fill this in yourself.]
+[PASTE REAL OUTPUT HERE — run BOTH commands below and label each section. Do not fill this in yourself.]
+
+GOTCHA: revision 1 of this deployment is permanently broken (it was applied while
+deployment.yml still had the literal placeholder in the image field, causing
+InvalidImageName). Never treat revision 1 as a valid rollback target — that context
+is exactly why this file matters: it should show revision 1 as broken/superseded and
+revision 2 as the good rollout.
 
 === kubectl rollout history deployment/guestbook ===
 [paste output here]
