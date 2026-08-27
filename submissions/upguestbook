@@ -1,18 +1,18 @@
-[PASTE REAL OUTPUT HERE. Run (after substituting REPLACE_NAMESPACE with sn-labs-rowannepulan):
-  docker build . -t us.icr.io/sn-labs-rowannepulan/guestbook:v1
-  docker push us.icr.io/sn-labs-rowannepulan/guestbook:v1
-
-Include the FULL build output and the final push digest line.
-
-GOTCHA — last attempt every layer was CACHED and the pushed digest came out identical to
-the old v1 digest: sha256:754931baf8f9df7a0e24d5876da8f0e49bb3e33983dc1b88ce49f430598617b1
-That meant the index.html/deployment.yml edits never actually reached the image.
-
-Before running this: confirm the local files on disk actually have the v2 changes
-(`grep -n "<title>\|<h1>" v1/guestbook/public/index.html` should show "Guestbook - v2"
-twice) — the hardened submit.sh does this check automatically and aborts the build
-if it fails, so prefer running the build through submit.sh rather than by hand.
-
-After the push, check the printed digest against the one above (and against
-.last-digest if submit.sh wrote one) — if it matches, STOP, don't trust this build,
-your edits still aren't in the image. Do not fill this in yourself.]
+The push refers to repository [us.icr.io/sn-labs-rowannepulan/guestbook]
+5f70bf18a086: Preparing
+76f883e15932: Preparing
+fed80e4e80bc: Preparing
+26682f137127: Preparing
+76407ae4c632: Preparing
+ad6768328a20: Preparing
+548a79621a42: Preparing
+ad6768328a20: Waiting
+548a79621a42: Waiting
+fed80e4e80bc: Layer already exists
+5f70bf18a086: Layer already exists
+76407ae4c632: Layer already exists
+76f883e15932: Layer already exists
+26682f137127: Layer already exists
+ad6768328a20: Layer already exists
+548a79621a42: Layer already exists
+v1: digest: sha256:118ff5d030287bac4f441cd1f38579e662d0c4fd88048e35467ab2b3f043b97c size: 1776

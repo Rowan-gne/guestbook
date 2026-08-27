@@ -1,1 +1,33 @@
-[PASTE REAL OUTPUT HERE — run: kubectl get hpa guestbook --watch  (after running the load generator against the guestbook route/service, in the IBM Cloud IDE terminal — should show REPLICAS > 0 as the HPA scales up). Do not fill this in yourself.]
+NAME        REFERENCE              TARGETS      MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   cpu: 0%/5%   1         10        8          80s
+guestbook   Deployment/guestbook   cpu: 0%/5%   1         10        10         91s
+guestbook   Deployment/guestbook   cpu: 16%/5%   1         10        10         106s
+guestbook   Deployment/guestbook   cpu: 0%/5%    1         10        10         2m1s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         2m31s
+guestbook   Deployment/guestbook   cpu: 18%/5%   1         10        10         2m46s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         3m2s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         3m17s
+guestbook   Deployment/guestbook   cpu: 18%/5%   1         10        10         3m32s
+guestbook   Deployment/guestbook   cpu: 25%/5%   1         10        10         3m47s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         4m2s
+guestbook   Deployment/guestbook   cpu: 31%/5%   1         10        10         4m47s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         5m2s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         5m17s
+guestbook   Deployment/guestbook   cpu: 25%/5%   1         10        10         5m47s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         6m2s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         6m18s
+guestbook   Deployment/guestbook   cpu: 18%/5%   1         10        10         6m33s
+guestbook   Deployment/guestbook   cpu: 31%/5%   1         10        10         6m48s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         7m3s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         7m18s
+guestbook   Deployment/guestbook   cpu: 0%/5%    1         10        10         7m33s
+guestbook   Deployment/guestbook   cpu: 25%/5%   1         10        10         7m48s
+guestbook   Deployment/guestbook   cpu: 18%/5%   1         10        10         8m3s
+guestbook   Deployment/guestbook   cpu: 0%/5%    1         10        10         8m18s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         8m33s
+guestbook   Deployment/guestbook   cpu: 31%/5%   1         10        10         8m48s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         9m4s
+guestbook   Deployment/guestbook   cpu: 6%/5%    1         10        10         9m19s
+guestbook   Deployment/guestbook   cpu: 18%/5%   1         10        10         9m34s
+guestbook   Deployment/guestbook   cpu: 12%/5%   1         10        10         9m49s
+guestbook   Deployment/guestbook   cpu: 18%/5%   1         10        10         10m

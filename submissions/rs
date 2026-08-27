@@ -1,6 +1,3 @@
-[PASTE REAL OUTPUT HERE — run: kubectl get rs
-(after rolling back with `kubectl rollout undo deployment/guestbook` — NO --to-revision flag,
-and NEVER --to-revision=1, since revision 1 is permanently broken (InvalidImageName).
-A plain `rollout undo` with no revision flag steps back one revision, which is what you want.)
-
-Do not fill this in yourself.]
+NAME                               DESIRED   CURRENT   READY   AGE
+guestbook-6dcc48d48f               1         1         1       21m
+openshift-web-console-6d9df7cb6d   2         2         2       28m

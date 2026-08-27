@@ -1,1 +1,2 @@
-[PASTE REAL OUTPUT HERE — run: kubectl get hpa guestbook  (immediately after `kubectl autoscale deployment guestbook --cpu-percent=5 --min=1 --max=10`, in the IBM Cloud IDE terminal — should show 0 replicas / TARGETS unknown or 0% before load). Do not fill this in yourself.]
+NAME        REFERENCE              TARGETS             MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   cpu: <unknown>/5%   1         10        0          1s
